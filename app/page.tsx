@@ -30,6 +30,7 @@ export default function HomePage() {
             nombre, otros todavía son un hueco por llenar.
           </p>
         </div>
+
         <div className="stack" aria-hidden="true">
           {ANCHOS_TORRE.map((ancho, i) => (
             <div
@@ -50,6 +51,7 @@ export default function HomePage() {
         <div className="catalog">
           {juegos.map((juego, i) => {
             const esFantasma = juego.estado === "proximamente";
+
             return (
               <div
                 key={i}
@@ -61,15 +63,30 @@ export default function HomePage() {
                   <p className="game-card__name">
                     {esFantasma ? "Próximo bloque" : juego.nombre}
                   </p>
+
                   <p className="game-card__tagline">
                     {esFantasma
                       ? "Todavía no tiene nombre."
                       : juego.tagline}
                   </p>
                 </div>
-                <span className="game-card__status">
-                  {estadoTexto(juego.estado)}
-                </span>
+
+                <div className="game-card__meta">
+                  {juego.url && (
+                    <a
+                      className="game-card__link"
+                      href={juego.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Descargar
+                    </a>
+                  )}
+
+                  <span className="game-card__status">
+                    {estadoTexto(juego.estado)}
+                  </span>
+                </div>
               </div>
             );
           })}
@@ -78,9 +95,15 @@ export default function HomePage() {
 
       <footer className="site-footer">
         <span>© {new Date().getFullYear()} Diego Alami Studio</span>
+
         <div className="site-footer__links">
-          <Link href="/privacidad">Política de Privacidad</Link>
-          <a href="mailto:diegoalami@gmail.com">Contacto</a>
+          <Link href="/privacidad">
+            Política de Privacidad
+          </Link>
+
+          <a href="mailto:diegoalami@gmail.com">
+            Contacto
+          </a>
         </div>
       </footer>
     </div>
