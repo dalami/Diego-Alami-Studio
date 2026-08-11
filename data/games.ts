@@ -13,6 +13,12 @@ export interface Game {
 //   (si ya hay prueba cerrada o beta pública, poné la url y aparece el botón).
 // estado "proximamente" -> bloque fantasma, sin nombre visible.
 export const juegos: Game[] = [
+   {
+    nombre: "Neurosprint",
+    tagline: "Ejercita tu mente diarimente .",
+    estado: "disponible",
+     url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
+  },
   {
     nombre: "Stack Tower",
     tagline: "Apilá bloques, esquivá pájaros, no dejes que el viento tire la torre.",
