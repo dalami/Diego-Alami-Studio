@@ -22,7 +22,7 @@ export const juegos: Game[] = [
     {
     nombre: "MathApp",
     tagline: "Aprende Matematicas jugando.",
-    estado: "proximamente",
+    estado: "en_desarrollo",
     // url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
   },
   {
