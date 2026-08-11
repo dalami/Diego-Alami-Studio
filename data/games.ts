@@ -19,6 +19,12 @@ export const juegos: Game[] = [
     estado: "disponible",
      url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
   },
+    {
+    nombre: "MathApp",
+    tagline: "Aprende Matematicas jugando.",
+    estado: "proximamente",
+    // url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
+  },
   {
     nombre: "Stack Tower",
     tagline: "Apilá bloques, esquivá pájaros, no dejes que el viento tire la torre.",
