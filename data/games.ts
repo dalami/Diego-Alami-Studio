@@ -25,6 +25,12 @@ export const juegos: Game[] = [
     estado: "en_desarrollo",
      //url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
   },
+   {
+    nombre: "Lumbre",
+    tagline: "Pon a prueba tus conocimientos con esta trivia diria.",
+    estado: "en_desarrollo",
+     //url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
+  },
     {
     nombre: "MathApp",
     tagline: "Aprende Matematicas jugando.",
