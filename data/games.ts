@@ -22,8 +22,8 @@ export const juegos: Game[] = [
   {
     nombre: "Kidgenius",
     tagline: "Para que los niños aprendan jugando .",
-    estado: "en_desarrollo",
-     //url: "https://play.google.com/store/apps/details?id=ar.com.neurosprint&hl=es_AR",
+    estado: "disponible",
+     url: "https://play.google.com/store/apps/details?id=ar.com.kidgenius&hl=es_AR",
   },
    {
     nombre: "Lumbre",
